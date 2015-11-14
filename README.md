@@ -41,7 +41,7 @@ This Quick Start Guide will help you quickly build a Backdrop 1.x site on the Ba
   2. Download and install [Vagrant](http://www.vagrantup.com/downloads.html).
   3. [Mac/Linux only] Install [Ansible](http://docs.ansible.com/intro_installation.html).
 
-Note for Mac users: Ansible can be using Homebrew
+Note for Mac users: Ansible can be install via Homebrew
 `brew install ansible`
 
 Note for Windows users: *Ansible will be installed inside the VM, and everything will be configured internally (unlike on Mac/Linux hosts). See [JJG-Ansible-Windows](https://github.com/geerlingguy/JJG-Ansible-Windows) for more information.*
