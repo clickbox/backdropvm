@@ -41,6 +41,9 @@ This Quick Start Guide will help you quickly build a Backdrop 1.x site on the Ba
   2. Download and install [Vagrant](http://www.vagrantup.com/downloads.html).
   3. [Mac/Linux only] Install [Ansible](http://docs.ansible.com/intro_installation.html).
 
+Note for Mac Users: Ansible can be using Homebrew
+`brew install ansible`
+
 Note for Windows users: *Ansible will be installed inside the VM, and everything will be configured internally (unlike on Mac/Linux hosts). See [JJG-Ansible-Windows](https://github.com/geerlingguy/JJG-Ansible-Windows) for more information.*
 
 Note for Linux users: *If NFS is not already installed on your host, you will need to install it to use the default NFS synced folder configuration. See guides for [Debian/Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-14-04), [Arch](https://wiki.archlinux.org/index.php/NFS#Installation), and [RHEL/CentOS](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-centos-6).*
@@ -60,7 +63,7 @@ Note: *If there are any errors during the course of running `vagrant up`, and it
 
 ### 3 - Configure your host machine to access the VM.
 
-  1. [Edit your hosts file](http://www.rackspace.com/knowledge_center/article/how-do-i-modify-my-hosts-file), adding the line `192.168.88.111  backdrop.dev` so you can connect to the VM. (Alternatively, you can install a Vagrant plugin to automatically add and remove the entry from your hosts file; run `vagrant plugin install vagrant-hostsupdater`).
+  1. [Edit your hosts file](http://www.rackspace.com/knowledge_center/article/how-do-i-modify-my-hosts-file), adding the line `192.168.88.111  backdrop.dev` so you can connect to the VM. (Alternatively, you can install a Vagrant plugin to automatically add and remove the entry from your hosts file; run `vagrant plugin install vagrant-hostsupdater`). After installing reload the VM to reflect changes in hosts; run `vagrant reload`
   2. Open your browser and access [http://backdrop.dev/](http://backdrop.dev/). This will bring you to the Backdrop installer.
 
 ## Extra software/utilities
@@ -85,6 +88,4 @@ If you don't want or need one or more of these extras, just delete them or comme
   - Learn about how Ansible can accelerate your ability to innovate and manage your infrastructure by reading [Ansible for DevOps](https://leanpub.com/ansible-for-devops).
 
 ## Credit
-This Backdrop/Vagrant VM is a fork of [Jeff Geerling's Drupal VM] (https://github.com/geerlingguy/drupal-vm)
-
-[Jeff Geerling](http://jeffgeerling.com/), owner of [Midwestern Mac, LLC](http://www.midwesternmac.com/), created this project in 2014 so he could accelerate his Drupal core and contrib development workflow. This project, and others like it, are also featured as examples in Jeff's book, [Ansible for DevOps](https://leanpub.com/ansible-for-devops).
+This Backdrop/Vagrant VM is a fork of [Geoff St. Pierre's Backdrop VM](https://github.com/serundeputy/backdropvm)
